@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style>
+.left   {float:left;
+        border: 10px  solid honeydew;
+        box-shadow: 0 0 10px rgb(182, 182, 179)
+        }
+.right  {float: right;
+        border: 10px  solid honeydew;
+        box-shadow: 0 0 10px rgb(182, 182, 179);
+        }
+
+body    {background:rgb(250, 250, 242);
+        margin: 20px;}
+
+p       {text-align:justify;
+        border: 1px solid rgb(238, 236, 236);
+        overflow:hidden;
+        }
+/* or use pseudoblock to include image within the frame */
+
+.right::after{content: '';
+        display:block;
+        clear: both;
+        }
+/* 3 floating columns css */
+        #container1 {
+    float:left;
+    width:100%;
+    border: 1px solid gold;
+    margin-bottom: 30px;
+}
+#col1 {
+    float:left;
+    width:30%;
+    background:rgb(238, 204, 204);
+}
+#col2 {
+    float:right;
+    width:30%;
+    background:rgb(238, 238, 175);
+}
+#col3 {
+    float:left;
+    width:40%;
+    background:rgb(225, 243, 225);
+}
+footer{clear:both;
+    height:  50px;
+    background-color: rgb(181, 202, 181);
+
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ut quas. Eum ipsa voluptatibus quibusdam ad! Dolorem inventore eaque accusantium soluta quasi corrupti voluptas aspernatur molestias nam quos, asperiores dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis ipsum aut! Ex ad unde sed, hic quod accusantium adipisci, inventore est architecto labore dolorem molestiae earum sequi velit autem laborum minima ratione quia necessitatibus soluta non fuga illum cumque. Commodi, corporis. Perspiciatis quia dignissimos neque possimus <img src="http://placekitten.com/100/100/" alt="" class="left" > libero deserunt iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nam adipisci minus quod nisi suscipit dolor voluptatibus provident mollitia impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores rerum ipsa numquam debitis, officiis illum, corrupti autem, veritatis aliquid maiores officia laudantium! Nostrum sequi animi accusamus consectetur exercitationem aperiam? Molestias exercitationem cupiditate perspiciatis cum, ad libero nemo fuga molestiae consectetur assumenda rerum nesciunt voluptatum laboriosam et at, corporis minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatum consequatur ipsum similique sequi laboriosam. Rerum repudiandae sapiente recusandae qui commodi doloremque dolorem. Ut sit corrupti  ullam reiciendis delectus dolorum, atque quas mollitia vero! Tenetur fugit iusto in nisi expedita praesentium, laudantium nemo voluptate quam pariatur optio sunt quaerat et corporis impedit magni, quis dolorum libero error, veritatis perspiciatis ut doloribus incidunt. Atque harum vel maiores, ducimus ab voluptate voluptas, quo quis similique iusto, in possimus impedit modi deleniti voluptates officiis veritatis. Non enim aspernatur nihil fuga, beatae et numquam dolore, cumque officiis corrupti saepe. Maiores beatae rem vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti eligendi commodi iste esse incidunt rerum ipsum veniam modi ut sit vitae aspernatur molestiae, mollitia officia error veritatis qui labore consequatur odit voluptatum maiores! Veritatis mollitia animi magnam saepe delectus maiores? Suscipit, consequuntur <img src="http://placekitten.com/100/100/" alt="" class="right">molestiae. Quia ipsa in dicta blanditiis nisi, error nobis neque incidunt labore quibusdam, officia minus facilis voluptatum sunt repellat expedita quidem illum pariatur. Numquam tempore ab quis aliquam sapiente similique ipsam molestiae? Impedit recusandae ipsum ullam neque cupiditate consectetur suscipit delectus deserunt accusamus, nesciunt dolorem, amet, ab enim saepe id minima voluptatibus facere commodi ducimus quo quod. </p><br><br><br>
+
+
+    <div id="container1">
+        <div id="col1">Column 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi illo in unde error hic? Sequi accusantium repellendus quisquam, odit quasi incidunt nemo rerum consequuntur amet repellat dolore maiores maxime fugiat? Qui, doloribus earum. Nulla illum hic tempore sapiente, maxime distinctio quae dolore molestias vel, atque cumque vero impedit sit. Consequatur deleniti dolore ipsam nisi, tempore facere praesentium sit soluta totam unde sunt, vel quis quisquam iure officiis molestias pariatur assumenda veniam, cumque minus obcaecati aliquam. Optio numquam mollitia at veniam quaerat ut nemo exercitationem, suscipit nam laboriosam? Illo quidem, ipsam consectetur fugiat alias nisi dignissimos suscipit ab voluptas minima.</div>
+        <div id="col2">Column 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse consectetur unde, iusto in atque sunt expedita doloremque quia vel quasi. Odio, recusandae nihil natus harum reiciendis atque cumque dignissimos ratione nisi id tempora vero animi pariatur corporis vitae non amet unde iste! Autem cupiditate molestiae eaque esse, iusto earum asperiores officiis? Alias molestiae neque corporis distinctio quis doloribus, consectetur quo nulla nobis placeat culpa soluta hic, in saepe blanditiis qui ut iusto ratione incidunt minima aliquam! Et error dicta recusandae dolorum id aperiam voluptatem repellat! Sed, asperiores ipsam sit cupiditate, quia sequi eum id, ut debitis nemo sunt earum. Quasi.</div>
+        <div id="col3">Column 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, excepturi ratione quibusdam suscipit odit minus similique rerum enim harum labore delectus aliquid. Nulla a doloremque voluptates, impedit voluptatibus corporis iusto facere voluptatem maiores deserunt nihil, possimus consequatur, laborum pariatur dolorum deleniti eligendi iure natus? Aut consequuntur architecto ducimus molestias a minus recusandae ad. Odio sit, sunt praesentium quidem unde delectus placeat voluptates ut quo doloribus vero maxime consectetur veniam cum eos! Deserunt est labore rerum! Sunt ea, quas, omnis quia, dolorem dolores placeat optio deserunt aliquam aperiam sequi. Ratione et quos necessitatibus rem, alias doloremque. Beatae tempore, minus dolor enim suscipit quisquam saepe, laudantium praesentium ut dicta nesciunt inventore placeat ex iste id error facilis temporibus nisi ducimus ratione a hic dolorem voluptatum totam. Quia iste rerum veniam quas culpa optio, ullam iure at quos omnis iusto ducimus labore hic adipisci officia neque nisi ad accusantium voluptates. Unde perspiciatis consequatur fugiat iusto mollitia quas commodi est eos? Officia qui itaque inventore perspiciatis nisi reiciendis deleniti unde, nemo aut quasi saepe optio veniam ex voluptatum? Autem quisquam consequuntur illum nesciunt reiciendis nostrum corporis, ipsum molestiae veritatis! Debitis, tempore vel ipsa et numquam sunt repellat ut nobis assumenda minus vero, modi minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero fugiat aliquid architecto ullam sed, possimus id in aut, laborum repudiandae eligendi fuga ratione, sint perferendis accusamus. Blanditiis ipsa rem culpa deleniti aliquam odit ducimus dolorum, rerum nulla? Tenetur, veritatis placeat quo minus soluta alias earum fugit debitis quod rerum est nam expedita fuga quae ea ut, cum saepe labore quibusdam cupiditate incidunt. Qui explicabo veniam quo fugiat. Tenetur velit porro molestias maxime? Magnam iste, quis omnis accusamus reprehenderit exercitationem aliquid obcaecati sunt quaerat magni animi quia illo quas quam dolore. Quidem dicta tempore, iure soluta corporis perferendis rerum corrupti recusandae!
+        </div>
+    </div><br><br><br>
+    <footer>copiright</footer>
+</body>
+</html>

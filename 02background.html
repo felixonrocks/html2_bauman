@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+<style>
+
+.innerbanner{
+	height: 600px;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;}
+
+.innerbanner:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#002f4b,#F08533);
+		opacity: .6;}
+
+.text-area{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:300px;
+    height:150px;
+    color:#222;
+    background:rgba(255,255,255,0.5);
+    text-align:center;}
+
+
+
+
+
+#r{width: 500px;
+height: 200px;
+padding: 4px;border: 3px dashed pink;
+background:#f1eff0 no-repeat  url(http://placehold.it/100x100/c6f56c/369?text=Првиет);
+background-origin: border-box;
+background-position: 80px 30px;
+background-position: center;
+background-position: right bottom;
+background-position: 10% 20%;}
+
+
+body{background: no-repeat url(/background1.png);
+background-position: 6px 75px;
+}
+
+p{background:radial-gradient(red, grey);
+background: radial-gradient(closest-side, rgb(245, 135, 230), rgb(203, 120, 236), rgb(160, 152, 231));}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="innerbanner">
+        <div id="js-banner-particles"></div>
+        <div class="text-area">
+          <h2>box model demo</h2>
+          <h3>particles JS banner</h3>
+        </div>
+      </div>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa explicabo consequuntur reprehenderit placeat! Beatae id nostrum ratione quibusdam et, quia expedita atque similique vero magni praesentium libero eaque quae.</p>
+
+<div id="d">Lorem, ipsum.</div>
+
+<div id="r">Lorem, ipsum  </div>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+<script id="rendered-js" >
+
+particlesJS("js-banner-particles", 
+    {
+        "particles": {
+          "number": {
+            "value": 60,
+            "density": {
+              "enable": true,
+              "value_area": 700
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 0.4,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 250,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 4,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+      
+    </script>
+    
+
+</body>
+</html>

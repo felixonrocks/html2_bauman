@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style>
+div{position: absolute;}
+.some{background: pink;
+        width: 10px;
+        height: 50px;}
+.foo{background: brown;
+        width: 50px;
+        height: 10px;z-index: -1;}
+.next{background: lime;
+        height: 20px;
+        width: 20px;
+        z-index: 20000;
+        position: absolute;}
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="some"></div>
+    <div class="foo">
+        <div class="next"></div>
+    </div>
+</body>
+</html>
