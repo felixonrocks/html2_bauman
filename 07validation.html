@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <title>Document</title>
+
+    <style>
+        input[type=checkbox]:required+label::before{content:'* '; color: red;} 
+        input:valid{background: rgb(206, 240, 206);}
+        input:invalid{background: rgb(238, 179, 179);}
+
+    </style>
+</head>
+
+<body>
+<form action="">
+    <input type="text" pattern="98345799384" placeholder="+7(7687)3245345" required>
+    <input type="text"  >
+</form><br><br>
+
+<input type="checkbox" name="" id="foo" required>
+<label for="foo">do you agree with terms </label>
+
+</body>
+</html>

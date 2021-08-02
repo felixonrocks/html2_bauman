@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+a[href$=html]{
+    background-image: url(sprite.png);
+                background-repeat: no-repeat;
+                padding-left: 24px;
+                display: inline-block;
+                line-height: 23px;
+                }
+
+
+a[href$=txt]{
+    background-image: url(sprite.png);
+                background-repeat: no-repeat;
+                padding-left: 24px;
+                display: inline-block;
+                line-height: 23px;
+                background-position: 0 -24px;}
+
+a[href$=xml]{
+                background-image: url(sprite.png);
+                background-repeat: no-repeat;
+                padding-left: 24px;
+                display: inline-block;
+                line-height: 23px;
+                background-position: 0 -48px;}
+
+
+
+        *{font-family: sans-serif;}
+         
+        .warning{padding-left: 150px;}
+        .fee{padding-left: 10px;}
+        #oops{transform: rotate(40deg);}
+        li      {display: inline-block;}
+        [title*="Алекс"]{text-decoration: underline;}
+        [title$="як"]{color:violet;}
+        [title|="camel"]{border-left: 50p solid black;}
+        [title˜="Ов"]{padding: 20px; border : 5px solid salmon;}
+         
+    </style>
+    <link rel="stylesheet" href="01style.css">
+</head>
+<body>
+    
+    
+    <p><a href="new.txt">facebook</a>
+        <a href="selector.html">twitter</a>
+        <a href="selector.xml">youtube</a>
+
+    </p>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil consequuntur aliquid dolore aliquam accusamus. Consequatur at, corrupti consequuntur nihil quibusdam in doloremque necessitatibus perferendis explicabo voluptatem fugit distinctio obcaecati?</p>
+    <p>A nam, reprehenderit, facere mollitia accusamus reiciendis deleniti rerum dicta quas doloremque perferendis voluptatibus voluptate obcaecati adipisci consequuntur explicabo laboriosam ducimus dolor enim ratione et? Labore atque nobis nesciunt debitis!</p>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos atque corporis nulla eius eveniet mollitia perspiciatis sunt sed consectetur minus! Aut fuga pariatur vitae, expedita eum impedit omnis quo reiciendis.</div>
+    <div>Ducimus iste, accusantium libero voluptatem est, velit odit facilis dicta molestias saepe asperiores neque quibusdam tempore officia, modi veniam? Quo ullam omnis doloremque voluptatem nesciunt ea, hic minima tempore labore.</div></body>
+    <br><br><br>
+
+    <br><br><br>
+    <p><a href="selectors.html">Просто</a> <a href="new.txt">текст</a> в <a
+        href="/docs/test.xml">параграфе</a></p>
+        <p title="" data-my='test'>Параграф с пустым title</p>
+        <p title="Александр Ов ечкин">Параграф с title "Александр Овечкин"</p>
+        <div title="Александр Пушкин">Блок с title "Александр Пушкин"</div>
+        <p title="camel-Александрийский маяк">Параграф с title "Александрийский маяк"</p>
+
+
+
+
+
+<div class="foo">text1</div>
+<p class="fee">text2</p>
+<p class="foo warning">text2</p>
+
+<div class="p foo">text3</div>
+<div id="oops">text4</div>
+ 
+
+</html>

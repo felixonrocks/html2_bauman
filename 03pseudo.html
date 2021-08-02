@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style> a:link{color: red;font-size: 30px;}
+            a:visited{color: violet; } 
+            a:hover{background: yellow;}
+            a:focus, input{ border: 5px solid orange; outline:0;}
+            p::first-letter{color: red; font-size: 2rem;}
+            body{font-family: verdana sans-serif;}
+            p::before{background: yellow;
+            content: "attention"; color: violet;
+            }
+
+            p::after{background: greenyellow;
+           content: "attention"; color: violet; 
+            }
+
+            @media print { 
+                a[href]::after{content:"("attr(href)")" ;}
+            }
+
+
+    </style>
+</head>
+<body>
+    
+<p>First p
+ 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti, soluta veniam odio quibusdam quis incidunt ratione ut quas perferendis non recusandae veritatis ipsum voluptatibus ipsa molestiae ducimus voluptatem inventore.</p>
+
+        <p>First p</p>      
+        <p>Text</p>
+
+</p>
+<p>first p
+    <div>
+        <p>First p</p>
+        <p>First p</p>
+    </div>
+        <p>Text and<a href="#">link </a>in p <p>
+        <input type="text" name="" id="">
+    
+</p>
+
+
+
+
+
+</body>
+</html>
