@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+<style>
+    /* background */
+body{background: url(/banner3.jpeg) no-repeat;
+    background-size: 100%;
+    }
+
+    /* table positioning */
+.container{position: absolute;
+    top: 35%;
+    left: 35%;
+    border: 1px solid pink;
+    padding: 30px;
+    }
+
+/* start rounded corners */
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tfoot:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tfoot:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+/* end rounded corners */
+
+
+/* coloring head body foot */
+th{ background: linear-gradient(45deg, #e5f507, #05e247);}
+tbody{background: rgba(255, 255, 0, 0.5);} 
+tfoot{background: rgba(58, 247, 215, 0.7);}
+tr:nth-child(4){background: rgba(235, 11, 134, 0.6);}
+tr:nth-child(3) td:nth-child(5){background: rgba(13, 167, 13, 0.8);}
+
+
+table{width: 200px;
+    border-collapse: separate;  
+    border-spacing: 0;
+    box-shadow: rgb(232, 248, 3) 0 2px 7px;}
+
+
+
+td, th {border:1px solid rgb(56, 56, 55);}
+
+
+
+
+
+.a{background: pink;}
+.b{background: green;}
+.c{background: yellow;}
+
+
+
+/* horizontal menu css */
+#menu{padding: 0;
+text-align: center;
+    list-style-type: none;
+    display: table;
+    border-collapse: collapse;
+    width: 100%;}
+
+ #menu li{/*border: 1px solid pink; */
+    background: linear-gradient( 180deg, rgba(96, 112, 131, 0.7), rgba(218, 216, 216, 0.6));
+    display: table-cell;
+    border-radius: 10px;}
+
+
+
+/* vertical menu css */
+#vertmenu{padding: 10px;
+    text-align: center;
+    color: rgb(95, 93, 93);
+    list-style-type: none;
+    display: table;
+    border-collapse: collapse;
+    width: 10%;
+    
+    }
+
+ #vertmenu li{/*border: 1px solid pink; */
+    background: linear-gradient( 180deg, rgba(96, 112, 131, 0.7), rgba(218, 216, 216, 0.6));
+    display: table-row;
+    height: 25px;
+    border-radius: 20px;}
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+    <table>
+        <caption><h3>our table</h3></caption>
+        <!-- start table head -->
+        <thead>
+            <tr>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>
+                <th>h</th>   
+            </tr>
+        </thead>
+        <!-- end table head -->
+
+        <!-- table body -->
+        <tbody></tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <!-- end table body -->
+
+
+        <!-- footer -->
+        <tfoot>
+            <tr>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+                <td>i</td>
+            </tr>
+        </tfoot>
+    
+</table><br>
+</div>
+
+
+<ul id="menu">
+<li>shop</li>
+<li>delivery</li>
+<li>terms</li>
+<li>about us</li>
+<li>products</li>
+<li>blog</li>
+<li>contact</li>
+</ul>
+
+
+
+<ul id="vertmenu">
+    <li>shop</li>
+    <li>delivery</li>
+    <li>terms</li>
+    <li>about us</li>
+    <li>products</li>
+    <li>blog</li>
+    <li>contact</li>
+    </ul>
+
+</body>
+</html>

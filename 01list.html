@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+.container{background:rgb(243, 227, 250);
+width: 1200px;
+height: 1500px;}
+div{width: 300px;}
+
+
+ul{background:rgb(198, 241, 248);
+        /* padding-left: 0; */
+        /* list-style-type:upper-roman; */
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    list-style-image: url();
+    /* list-style-type: none; */
+}
+li{background:rgb(247, 219, 238);}
+
+
+ol{list-style-type: none;
+        counter-reset: i 0;}
+
+ol li::before{counter-increment: i 1;
+        content: counter(i)'.';
+}
+ol ol   {counter-reset: j 0;}
+ol ol li::before{counter-increment: j 1;
+        content: counter(i)'.'counter(j)') ';
+}
+
+        </style>
+</head>
+<body>
+    <div class="container">
+    <div><img src="/banner1.jpg" alt="" width="1200px" height="200"></div>
+<div>
+    <ul>
+        <li>glava on imp</li>
+        <li>glava other</li>
+        <li>glava last</li>
+     </ul>
+</div><br><br><br>
+    <ol>
+        <li>
+            <ol>
+                <li>point1</li>
+                <li>point2</li>
+                <li>point3</li>
+            </ol>
+        </li>
+                <li>point1</li>
+                <li>point2</li>
+                <li>point3</li>
+                <li>point4</li>
+            
+        
+    </ol>
+</div>
+</body>
+</html>

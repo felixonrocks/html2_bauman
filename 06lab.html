@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Document</title>
+    <style>
+/* background */
+body{
+    background: url(/banner4.jpeg) no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: Geneva, sans-serif;
+    padding: none;
+    margin: none;}
+
+
+/* horiz menu css */
+#menu{
+    display: table;
+    width: 50%;
+    }
+
+#menu ul{
+    position:relative;}
+
+/* upper menu design */
+#menu ul li, #menu ul ul li{
+    background: linear-gradient(0deg,  rgba(101, 166, 226, 0.5), rgba(115, 86, 240));
+    display: table-cell;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    }
+  
+    /* box-shadow: rgb(146, 176, 241) 20px 10px 30px */ 
+
+#menu li a, #menu ul ul li a{ 
+    text-decoration: none;
+    color: seashell;
+    text-transform: uppercase;}
+
+#menu li:hover, #menu ul ul li:hover{
+    background: rgba(101, 166, 226, 0.5);
+}
+
+/* drop down menu */
+#menu ul ul{ 
+    position:absolute;
+    /* display: none; */
+    display: block;
+    width: 80%;
+    margin-left: -40px;
+    height:0;
+    overflow: hidden;
+    transition: all 300ms 300ms linear;
+    }
+
+
+#menu li:hover ul {
+    /* display: block; */
+    height: 120px;
+
+}
+#menu li:hover li {
+    display: block;
+} 
+
+
+
+
+/* footer menu css */
+#footermenu{
+    width: 100%;
+    height: 40px;
+    margin-right: 40px;
+    text-align: center; }
+    /* margin: auto;} */
+#footermenu td{width: 10%;}
+#footermenu td a{text-decoration: none;
+    color:   rgb(68, 60, 139);
+    text-transform: uppercase;}
+#footermenu td a:hover{color: rgba(101, 166, 226, 0.5);}
+
+
+/* other elements css */
+h3, h2{text-align: center;
+    color: rgb(68, 60, 139);
+    text-transform: uppercase;}
+h2:hover{color: rgba(101, 166, 226, 0.5);}
+p{color: rgb(47, 26, 87);
+    height: 500px;
+    text-align: justify;
+    }
+small{color: rgb(68, 60, 139);}
+
+
+input{
+    border-radius: 30px;
+    height: 20px;
+    width: 115px;
+    border: 1px solid rgba(250, 128, 114, 0.475);
+
+   margin: 30px;
+    overflow: hidden;
+    float: right;
+    display: inline-block;
+    
+   }
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+<div id="search">
+    <input type="text" placeholder="Search..">
+</div>    
+<h2>phone directory</h2> 
+<div id="menu">
+    
+<ul>
+        <li><a href="#" id="">phones</a>
+            <ul>
+                <li><a href="#" id="">iphone</a></li> </tr>
+                <li><a href="#" id="">samsung</a></li></tr>
+                <li><a href="#" id="">xiaomi</a></li></tr>
+            </ul></li>
+   <li><a href="#" id="">accessories</a></li>
+   <li><a href="#" id="">ringtones</a></li>
+   
+</ul>
+
+
+</div>
+
+<!-- end drop menu -->
+<h3>announcement:</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis, saepe deleniti repellendus blanditiis ea earum exercitationem sed voluptates, ducimus eius ab vitae, dolores iste fugiat veniam corrupti quasi. Beatae tenetur vero est, quibusdam nobis deleniti? Consequuntur tenetur quia voluptas deserunt exercitationem reprehenderit debitis magnam ad aliquam corrupti, minima est ratione iusto tempora eligendi quis, itaque repudiandae! Cum quisquam hic excepturi in laborum impedit dolorum ad assumenda rerum aliquid, repellat ipsam? Doloremque laborum dolor nam? Laborum quaerat debitis, necessitatibus molestias repudiandae vitae blanditiis est ducimus iste deleniti, amet animi? Officia libero quaerat quas nemo aliquam vero, facilis eius, eaque eveniet corporis iste quo in velit alias at enim accusamus ipsa error fugiat quos voluptatibus amet? Fuga quas consectetur obcaecati officia ducimus laborum voluptate expedita consequatur odit vero id fugiat recusandae itaque neque temporibus, veniam amet accusamus blanditiis placeat hic, odio animi. Dolorum omnis, sed aperiam quam saepe laborum eligendi officiis, illum, dignissimos libero commodi explicabo voluptate aspernatur? Est, placeat ipsa voluptates unde modi aperiam, magni quia reiciendis, incidunt officia saepe minima aliquid. Quam explicabo doloribus ipsa. Provident alias quibusdam deserunt, tenetur autem temporibus. Quasi, eum qui quo sapiente vitae soluta ipsum cupiditate officiis accusantium exercitationem, cum blanditiis quas repellat ad.</p>
+
+
+
+</body>
+
+<footer>
+    <svg height="2px" width="1200px">
+        <line x1="50" y1="0" x2="900" y2="0" style="stroke:rgba(43, 100, 223, 0.5);stroke-width:1" />
+    </svg>
+
+
+    <table id="footermenu">
+        <tr>
+                <td><a href="#" id="">about us</a></td>
+                <td><a href="#" id="">contact us</a></td>
+                <td><a href="#" id="">address</a></td>
+                 
+
+                
+        </tr>
+        <tr>
+                <td><a href="#" id="">phones</a></td>
+                <td><a href="#" id="">accessories</a></td>
+                <td><a href="#" id="">ringtones</a></td>
+                 
+  
+                
+        </tr>
+        <tr>
+                <td><a href="#" id="">phones</a></td>
+                <td><a href="#" id="">accessories</a></td>
+                <td><a href="#" id="">ringtones</a></td>
+           
+        </tr>
+        <tr>
+            <td><a href="#" id="">phones</a></td>
+            <td><a href="#" id="">accessories</a></td>
+            <td><a href="#" id="">ringtones</a></td>
+        
+    </tr>
+    <tr>
+        <td><a href="#" id="">phones</a></td>
+        <td><a href="#" id="">accessories</a></td>
+        <td><a href="#" id="">ringtones</a></td>
+    
+</tr>
+    </table>
+    <small>&#169copiright pokemon corp</small>
+</footer>
+</html>

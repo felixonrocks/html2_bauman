@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Document</title>
+    <style>
+
+        #spinner{
+            position: absolute;
+            left: 80%;
+            top: 80%;
+            border: 5px solid white;
+            border-top: 5px solid blue;
+            border-bottom: 5px solid orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+
+            animation: rotate1 3s linear infinite;
+            }
+            @keyframes rotate1{
+                0%{transform: rotate(0deg);}
+                5%{border-top: 5px solid rgb(184, 33, 230);
+                    border-bottom: 5px solid rgb(243, 247, 10);}
+                50%{border-top: 5px solid springgreen;
+                border-bottom: 5px solid tomato;}
+                100%{transform: rotate(360deg);}
+            }
+
+
+
+
+            /* lower spinner */
+            .spinner{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin:auto;
+            border: 5px solid white;
+            border-top: 5px solid blue;
+            border-bottom: 5px solid orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+
+            animation: rotate 3s linear infinite;
+            }
+            .spinner .spinner{
+                width: 90px;
+                height: 90px;
+                animation: rotate2 3s linear infinite;
+            }
+            @keyframes rotate{
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+
+
+            @keyframes rotate2{
+                from{transform: rotate(540deg);}
+                to{transform: rotate(0deg);}
+            }
+
+
+    </style>
+</head>
+<body>
+    <div id="spinner">h</div>
+    <div class="spinner"><div class="spinner"></div></div>
+</body>
+</html>

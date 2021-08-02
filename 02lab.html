@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+body{background: rgb(250, 250, 246);}
+#ul {counter-reset: i 0;
+}
+#ul div::before{
+    counter-increment: i 1;
+    content:counter(i, upper-roman) " ";
+    padding-left: 30px;}
+
+div {counter-reset: j 0;}
+span{display: block;}
+div span::before{
+counter-increment: j 1;
+content:counter(i)"."counter(j)"  ";
+padding-left: 50px;
+}
+    </style>
+</head>
+<body>
+    <banner><img src="/banner2.jpeg" alt="" width="1200px"></banner>
+
+    <div id="ul">
+        <div>glava<br>
+            <span>razdel</span> 
+            <span>razdel</span> 
+        </div>
+        
+        <div>glava<br>
+            <span>razdel</span> 
+            <span>razdel</span> 
+            <span>razdel</span> 
+            <span>razdel</span> 
+        </div>
+       
+    </div>
+</body>
+</html>
