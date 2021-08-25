@@ -4,39 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href=".css">
-    <style>li{display: inline-block;}</style>
+    <style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+
+}
+
+/* NAVIGATION TOP */
+
+header{
+    transform: rotate(270deg);
+
+    width: max-content;
+    font-size: 2rem;
+    background: pink;
+    color: #fff;
+    position: absolute;
+    left: -52px;
+    top: 50px;
+    padding: 5px;
+    border-radius: 0 0 20px 20px;
+    }
+    
+/* 
+.nav-circle{
+
+    width: 100px;
+    height: 110px;
+    border-radius: 60px;
+    background: white;
+    position: relative;
+    top: 20px;
+    left: 40px;
+} */
+
+
+    li{
+        display: inline-block;
+        margin: 5px;
+        padding-top: 40px;
+    }
+    
+
+    li a{
+        text-decoration: none;
+        font-family:'mrs saint delafield', cursive;
+        font-size: 2rem;
+        color: grey;
+    }
+
+    .top-nav{
+        margin: auto;
+        width: max-content;
+        /* margin-left: 35px; */
+        background: url(img/500_F_252267356_RooCpNaOil6mP3SkuRMZ8gCgMtaj03HH.jpeg) left / contain no-repeat;
+       opacity: 0.9;
+        height: 100px;
+        margin-top: 20px;
+        }
+
+
+
+/* MAIN */
+
+main{
+    position: relative;
+    padding:45px;
+    height: 600px;
+}
+    p{
+        color: grey;
+    }
+
+
+
+    /* FOOTER */
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.footer-item{
+        background: url(img/pink-paint-brush-stroke-23.png) center bottom / contain no-repeat;
+        width: 100px;
+    }
+
+.footer-item__text{
+    margin-top: -20px;
+    font-size: 2em;
+    color: grey;
+
+}
+    </style>
 </head>
+
+
+
+
 <body>
- 
-<header>hello</header>
-<nav>
-    <ul>
-        <il><a href="page1">Lorem.</a></il>
-        <il><a href="page2">Laborum?</a></il>
-        <il><a href="page3">Repellat?</a></il>
-        <il><a href="page4">Corrupti!</a></il>
-        <il><a href="page5">Asperiores.</a></il>
-    </ul>
-    <ul>
-        <il><a href="#">Lorem.</a></il>
-        <il><a href="#">Ratione?</a></il>
-        <il><a href="#">Nostrum.</a></il>
-        <il><a href="#">Labore!</a></il>
-    </ul>
-</nav>
+<!-- TOP NAVIGATION -->
 
-<select name="" id="" disabled="disabled"></select>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas a sint minima, et explicabo ad, reprehenderit voluptate accusamus consequuntur, fuga aut tempore sed. Quisquam minima praesentium alias vel quibusdam laborum sequi omnis iure doloribus debitis eveniet similique, aliquid labore impedit dolorem quis. Natus architecto dolorem dolore id sapiente eaque sequi molestiae quam! Unde error debitis alias libero reiciendis praesentium temporibus provident dolor consequatur inventore sit corporis excepturi quo pariatur nihil aperiam, sapiente quibusdam minima ipsam illo laboriosam velit repellendus voluptatem commodi? Facere repudiandae rerum inventore tempore, accusamus nesciunt libero. Molestias voluptas quaerat deleniti, sint modi fuga commodi vero, vitae asperiores quidem ab unde! Iste illo eum esse rerum voluptas? Ad quae temporibus ipsa numquam dolore soluta, quia necessitatibus aliquid?</p>
+ <div class="header-menu">
+    <header>
+        hellomag.
+    </header>
 
-<br><br><br>
-<div><label for=""></label><input type="text"></div>
-<div>
-    <p></p>
+    <div class="nav-circle"></div>
+
+
+
+
+
+    <nav>
+        <ul class="top-nav">
+            <li><a href="page1">Lorem.</a></li>
+            <li><a href="page2">Laborum?</a></li>
+            <li><a href="page3">Repellat?</a></li>
+            <li><a href="page4">Corrupti!</a></li>
+        </ul>
+
+    </nav>
+
 </div>
 
+
+<!-- MAIN -->
+
+<main>
+
+    <select name="" id="" disabled="disabled"></select>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas a sint minima, et explicabo ad, reprehenderit voluptate accusamus consequuntur, fuga aut tempore sed. Quisquam minima praesentium alias vel quibusdam laborum sequi omnis iure doloribus debitis eveniet similique, aliquid labore impedit dolorem quis. Natus architecto dolorem dolore id sapiente eaque sequi molestiae quam! Unde error debitis alias libero reiciendis praesentium temporibus provident dolor consequatur inventore sit corporis excepturi quo pariatur nihil aperiam, sapiente quibusdam minima ipsam illo laboriosam velit repellendus voluptatem commodi? Facere repudiandae rerum inventore tempore, accusamus nesciunt libero. Molestias voluptas quaerat deleniti, sint modi fuga commodi vero, vitae asperiores quidem ab unde! Iste illo eum esse rerum voluptas? Ad quae temporibus ipsa numquam dolore soluta, quia necessitatibus aliquid?</p>
+
+    <br><br><br>
+    <div><label for=""></label><input type="text"></div>
+    <div>
+        <p></p>
+    </div>
+
+</main>
+<footer>
+    <ul>
+        <li class="footer-item">
+            <a class="footer-item__text" href="#">Lorem.</a>
+        </li>
+        <li class="footer-item">
+            <a class="footer-item__text" href="#">Ratione?</a>
+        </li>
+        <li class="footer-item">
+            <a class="footer-item__text" href="#">Nostrum.</a>
+        </li>
+        <li class="footer-item">
+            <a class="footer-item__text" href="#">Labore!</a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>
