@@ -2,117 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
     
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href=".css">
-    <style>
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
+<style>
+:root{
+    --golden:goldenrod;
+    --blue:rgb(56, 176, 206);
+    --silver:silver;
+    --colorg:rgb(70, 68, 68);
+    --headerblack:rgb(32, 24, 24);
 }
 
-body{
-    font-family: sans-serif;
 
-}
 
-/* NAVIGATION TOP */
+   *{
+       font-family: sans-serif;
+       text-decoration: none;
+    }
+
+
+/* TOP NAV */
 
 header{
-    transform: rotate(270deg);
+    margin: auto;
+    text-align: center;
+    background: url(img/depositphotos_92705226-stock-illustration-gold-glitter-background-sparkles.jpeg) 
+    center no-repeat;
+    height: 100px;
+    color: var(--headerblack);
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-stretch:wider;
+}
 
-    width: max-content;
-    font-size: 2rem;
-    background: pink;
-    color: #fff;
-    position: absolute;
-    left: -52px;
-    top: 50px;
-    padding: 5px;
-    border-radius: 0 0 20px 20px;
-    }
-    
-/* 
-.nav-circle{
-
-    width: 100px;
-    height: 110px;
-    border-radius: 60px;
-    background: white;
+.separator{
+    font-size: 4rem;
     position: relative;
-    top: 20px;
-    left: 40px;
-} */
+    top: -90px;
+    left: -49px;
+    color: var(--blue);
 
-
-    li{
-        display: inline-block;
-        margin: 5px;
-        padding-top: 40px;
-    }
-    
-
-    li a{
-        text-decoration: none;
-        font-family:'mrs saint delafield', cursive;
-        font-size: 2rem;
-        color: grey;
-    }
-
-    .top-nav{
-        margin: auto;
-        width: max-content;
-        /* margin-left: 35px; */
-        background: url(img/500_F_252267356_RooCpNaOil6mP3SkuRMZ8gCgMtaj03HH.jpeg) left / contain no-repeat;
-       opacity: 0.9;
-        height: 100px;
-        margin-top: 20px;
-        }
-
+}
 
 
 /* MAIN */
 
+
 main{
-    position: relative;
-    padding:45px;
-    height: 600px;
+    padding-top: 100px;
 }
-    p{
-        color: grey;
-    }
+
+.main-spoiler{
+    display: flex;
+}
+
+
+.main-spoiler1, .main-spoiler2{
+    margin: 10px;
+    color: var(--colorg);
+}
+
+span{
+    color: var(--golden);
+    text-transform: uppercase;
+}
+
+
+/* SELECTORS */
+
+a[href$=txt]{ /* facebook */ 
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 23px;
+    height: 100px;
+    padding-top: -30px;
+    padding-left: 24px;
+    background-position: 0px -24px 12px;
+}
+
+
+a[href$=html]{ /* twitter */
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 23px;
+    height: 100px;
+    padding-left: 24px;
+    background-position: -100px 0px;
+}
 
 
 
-    /* FOOTER */
 
+a[href$=xml]{  /* youtube */
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    padding-left:24px;
+    display: inline-block;
+    line-height: 23px;
+    background-position: -200px 0px;
+}
+
+
+a[href$=php]{  /* youtube */
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    padding-left:24px;
+    display: inline-block;
+    line-height: 23px;
+    background-position: -300px 0px;
+}
+
+/* DECO SECTION */
+
+
+.button{
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    text-align:center;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, rgb(91, 233, 238), rgb(56, 176, 206));
+    box-shadow: 10px 3px 5px var(--golden);
+}
+         
+.warning{
+    margin-left: 150px;
+    background: linear-gradient(135deg, rgb(226, 208, 162),  goldenrod);
+}
+
+#rotate-item{
+    transform: rotate(310deg);
+}
+
+.main-text2{
+    margin-left: 110px;
+}
+
+
+.deco-section{
+    width: max-content;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* ASIDE BAR */
+
+aside{
+    width: 300px;
+    float: left;
+    margin: 40px ;
+    border-left:6px solid var(--blue);
+    padding-left: 15px;
+    height: 150px;
+}
+
+[title="aside-text1"]{
+    margin-top: 6px;
+}
+
+[title*="Алекс"]{
+    text-decoration:mistyrose;
+}
+[title$="як"]{
+    color:var(--golden);
+}
+[title|="camel"]{
+    border-left: 50p solid black;
+}
+[title˜="Ов"]{
+    padding: 20px; border : 5px solid salmon;
+}
+/* 
+MAIN ARTICLE
+ */
+
+.main-article{
+
+    margin: 20px;
+    margin-top: 300px;
+    color:var(--colorg);
+}
+/* FOOTER */
 
 footer{
     position: absolute;
     bottom: 0;
-    left: 30%;
+    width: 100%;
+    color: var(--blue);
 }
 
-.footer-item{
-        background: url(img/pink-paint-brush-stroke-23.png) center bottom / contain no-repeat;
-        width: 100px;
-    }
-
-.footer-item__text{
-    margin-top: -20px;
-    font-size: 2em;
-    color: grey;
+.round-shape{
+    width: 70px;
+    border-radius: 60px;
 
 }
+
     </style>
 </head>
 
@@ -122,61 +214,76 @@ footer{
 <body>
 <!-- TOP NAVIGATION -->
 
- <div class="header-menu">
     <header>
-        hellomag.
+        <h2>Fancy Selectors</h2>
+        <div class="separator">/</div>
     </header>
-
-    <div class="nav-circle"></div>
-
-
-
-
-
-    <nav>
-        <ul class="top-nav">
-            <li><a href="page1">Lorem.</a></li>
-            <li><a href="page2">Laborum?</a></li>
-            <li><a href="page3">Repellat?</a></li>
-            <li><a href="page4">Corrupti!</a></li>
-        </ul>
-
-    </nav>
-
-</div>
-
+    
 
 <!-- MAIN -->
 
 <main>
+    
+    
+    <div class="main-spoiler">
+            <p class="main-spoiler1"><span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Animi nihil consequuntur aliquid dolore aliquam accusamus. Consequatur at, corrupti consequuntur nihil quibusdam in doloremque necessitatibus perferendis explicabo voluptatem fugit distinctio obcaecati?</p>
 
-    <select name="" id="" disabled="disabled"></select>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas a sint minima, et explicabo ad, reprehenderit voluptate accusamus consequuntur, fuga aut tempore sed. Quisquam minima praesentium alias vel quibusdam laborum sequi omnis iure doloribus debitis eveniet similique, aliquid labore impedit dolorem quis. Natus architecto dolorem dolore id sapiente eaque sequi molestiae quam! Unde error debitis alias libero reiciendis praesentium temporibus provident dolor consequatur inventore sit corporis excepturi quo pariatur nihil aperiam, sapiente quibusdam minima ipsam illo laboriosam velit repellendus voluptatem commodi? Facere repudiandae rerum inventore tempore, accusamus nesciunt libero. Molestias voluptas quaerat deleniti, sint modi fuga commodi vero, vitae asperiores quidem ab unde! Iste illo eum esse rerum voluptas? Ad quae temporibus ipsa numquam dolore soluta, quia necessitatibus aliquid?</p>
 
-    <br><br><br>
-    <div><label for=""></label><input type="text"></div>
-    <div>
-        <p></p>
+            <p class="main-spoiler2"><span> A nam,</span> reprehenderit, facere mollitia accusamus reiciendis deleniti rerum dicta quas doloremque perferendis voluptatibus voluptate obcaecati adipisci consequuntur explicabo laboriosam ducimus dolor enim ratione et? Labore atque nobis nesciunt debitis!</p>
     </div>
 
+
+
+    <aside>
+
+        <p title="aside-text1">Параграф с пустым title</p>
+        <p title="Александр Ов ечкин">Параграф с title "Александр Овечкин"</p>
+        <div title="Александр Пушкин">Блок с title "Александр Пушкин"</div>
+        <p title="camel-Александрийский маяк">Параграф с title "Александрийский маяк"</p>
+
+    </aside>
+
+    <div class="deco-section">
+        <div class="main-text1 button" id="rotate-item">text1</div>
+        <p class="main-text2 button" id="rotate-item">text2</p>
+        <p class="warning button" id="rotate-item">text2</p>
+        <div class="p foo button" id="rotate-item">text3</div>
+        <div id="rotate-item" class="button">text4</div>
+    </div>
+
+    <div class="main-article">
+        <div class="main-article1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos atque corporis nulla eius eveniet mollitia perspiciatis sunt sed consectetur minus! Aut fuga pariatur vitae, expedita eum impedit omnis quo reiciendis.
+        </div>
+
+        <div class="main-article2">Ducimus iste, accusantium libero voluptatem est, velit odit facilis dicta molestias saepe asperiores neque quibusdam tempore officia, modi veniam? Quo ullam omnis doloremque voluptatem nesciunt ea, hic minima tempore labore.
+        </div>
+    </div>
+
+
+
 </main>
+
+<!-- FOOTER -->
+
 <footer>
-    <ul>
-        <li class="footer-item">
-            <a class="footer-item__text" href="#">Lorem.</a>
-        </li>
-        <li class="footer-item">
-            <a class="footer-item__text" href="#">Ratione?</a>
-        </li>
-        <li class="footer-item">
-            <a class="footer-item__text" href="#">Nostrum.</a>
-        </li>
-        <li class="footer-item">
-            <a class="footer-item__text" href="#">Labore!</a>
-        </li>
-    </ul>
+        
+    <p>
+        <a class="round-shape" href="facebook.txt">facebook</a>
+        <a class="round-shape" href="twitter.html">twitter</a>
+        <a class="round-shape" href="youtube.xml">youtube</a>
+        <a class="round-shape" href="instagram.php">instagram</a>
+    </p>  
+
+
+    <p>
+        <a class="round-shape" href="selectors.html">Просто</a>
+        <a class="round-shape" href="new.txt">текст</a> в 
+        <a class="round-shape" href="/docs/test.xml">параграфе</a>
+    </p>
+
 </footer>
 
+    
 </body>
-</html>
 
+</html>
